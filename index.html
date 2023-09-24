@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/logo.svg" />
+    <title>by trend</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="container">
+          <div class="item_nav">
+            <img src="./images/logo.svg" alt="logo" />
+            <div class="nav_items">
+              <ul>
+                <li><a href="#">Services</a></li>
+                <li><a href="./pages/about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li class="login">
+                  <svg
+                    class="svg_icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="60"
+                    height="26"
+                    viewBox="0 0 60 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M55.4386 1H4.5614C2.59449 1 1 2.63513 1 4.65217V21.3478C1 23.3649 2.59449 25 4.5614 25H55.4386C57.4055 25 59 23.3649 59 21.3478V4.65217C59 2.63513 57.4055 1 55.4386 1Z"
+                      stroke="#D9D9D9"
+                    />
+                  </svg>
+                  <a href="./pages/login_in.html">Login in</a>
+                </li>
+                <li class="login">
+                  <svg
+                    class="svg_icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="124"
+                    height="26"
+                    viewBox="0 0 124 26"
+                    fill="none"
+                  >
+                    <path
+                      d="M119.471 1H4.52893C2.57995 1 1 2.63513 1 4.65217V21.3478C1 23.3649 2.57995 25 4.52893 25H119.471C121.42 25 123 23.3649 123 21.3478V4.65217C123 2.63513 121.42 1 119.471 1Z"
+                      stroke="#D9D9D9"
+                    />
+                  </svg>
+                  <a href="./index.html">Open an account</a>
+                </li>
+                <li>
+                  <form>
+                    <select for="lang">
+                      <option value="en">En</option>
+                      <option value="ru">Ru</option>
+                      <option value="uz">Uz</option>
+                    </select>
+                  </form>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="account">
+        <div class="container">
+          <div class="hero_main">
+            <img src="./images/logo.svg" alt="logo" />
+            <h1>Welcome to ByTrend!</h1>
+            <p>
+              Already have an account?<a href="./pages/login_in.html"
+                >Login in</a
+              >
+            </p>
+            <!-- FORM -->
+            <form>
+              <div class="form_fields">
+                <div class="form_field">
+                  <label for="text">First name</label>
+                  <input
+                    type="text"
+                    name="text"
+                    id="text"
+                    placeholder="Alexander"
+                    required
+                  />
+                </div>
+                <div class="form_field">
+                  <label for="text">Last name</label>
+                  <input
+                    type="text"
+                    name="text"
+                    id="text"
+                    placeholder="Your surname"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form_date">
+                <label for="date">Birth day</label>
+                <input
+                  type="text"
+                  name="date"
+                  id="date"
+                  placeholder="06.12.1992"
+                  required
+                />
+                <img src="./images/calendar.svg" alt="calendar" />
+              </div>
+
+              <div class="gen">
+                <h2>Gender</h2>
+                <div class="form_genders">
+                  <div class="form_gender">
+                    <input type="radio" name="gender" id="male" required />
+                    <label for="male">Male</label>
+                  </div>
+                  <div class="form_gender">
+                    <input type="radio" name="gender" id="female" required />
+                    <label for="female">Female</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form_skype">
+                <label for="skyp">Skype</label>
+                <input
+                  type="email"
+                  name="skyp"
+                  id="skyp"
+                  placeholder="Your login Skype"
+                  required
+                />
+              </div>
+
+              <div class="form_promo">
+                <label for="promo">Promo</label>
+                <input
+                  type="password"
+                  name="promo"
+                  id="promo"
+                  placeholder="Promo Your promo"
+                  required
+                  minlength="8"
+                  maxlength="10"
+                />
+              </div>
+
+              <div class="form_submit">
+                <button type="submit">
+                  Continue
+                  <img src="./images/Arrow Right 1 - 24px.svg" alt="righ" />
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

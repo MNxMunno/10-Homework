@@ -1,0 +1,527 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/m8-.jpg);
+  background-size: cover;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+nav {
+  box-shadow: 3px 3px 15px 1px rgba(0, 0, 0, 0.4);
+}
+
+header {
+  box-shadow: 3px 0 20px 1px rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  position: fixed;
+}
+
+.item_nav {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 3px 3px 15px 1px rgba(0, 0, 0, 0.4);
+  padding: 10px 100px;
+  gap: 520px;
+}
+
+.nav_items ul {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav_items a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.85);
+  font-family: sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#lang {
+  outline: none;
+}
+
+.login {
+  position: relative;
+  display: block;
+}
+
+.login a {
+  position: absolute;
+  top: 4.5px;
+  left: 4px;
+}
+
+select {
+  padding: 3px 5px 1px;
+  outline: none;
+}
+
+/* MAIN */
+
+.account {
+  margin-top: 100px;
+}
+
+.hero_main {
+  background-color: #4441504d;
+  backdrop-filter: blur(10px);
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 3px 3px 15px 1px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 40px;
+  border-radius: 1px solid;
+}
+
+.hero_main img {
+  padding-top: 40px;
+  padding-bottom: 24px;
+}
+
+.hero_main h1 {
+  padding-bottom: 16px;
+  color: #919097;
+}
+
+.hero_main p {
+  color: #838286;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+.hero_main a {
+  display: inline-block;
+  margin-left: 10px;
+  color: var(--01-bab-3, #01bab3);
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px; /* 162.5% */
+}
+
+.form_fields {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.form_field input {
+  margin-bottom: 24px;
+  display: block;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px 32px 14px 16px;
+  color: #444150;
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+
+.form_field label {
+  color: #6b6a6e;
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+
+input {
+  margin-top: 8px;
+  outline: none;
+}
+
+.form_date {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.form_date img {
+  position: absolute;
+  top: 0px;
+  right: 12px;
+}
+
+.form_date input {
+  display: block;
+  padding: 10px 297px 14px 16px;
+  color: #444150;
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  border-radius: 5px;
+}
+
+.form_genders {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+h2 {
+  color: #444150;
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+
+.form_gender {
+  /* width: 200px; */
+  border: 2px solid grey;
+  padding: 10px 150px 16px 16px;
+  transition: 0.4s;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.form_gender:hover {
+  border: 2px solid #01bab3;
+}
+
+.form_gender input {
+  cursor: pointer;
+  color: #838286;
+}
+
+.form_gender label {
+  margin-left: 16px;
+  font-size: 18px;
+  cursor: pointer;
+  color: #b2b1b6;
+  font-family: Segoe UI;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+
+#male:hover {
+  border-color: #01bab3;
+}
+
+.form_skype {
+  margin-top: 24px;
+}
+
+.form_skype label {
+  color: #66646d;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+
+.form_skype input {
+  display: block;
+  padding: 15px 298px 14px 16px;
+  color: #444150;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+
+.form_promo {
+  margin-top: 24px;
+}
+
+.form_promo label {
+  color: #929195;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+}
+
+.form_promo input {
+  display: block;
+  padding: 15px 298px 14px 16px;
+  color: #444150;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+
+.form_submit {
+  position: relative;
+}
+
+button {
+  text-decoration: none;
+  margin-top: 24px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: var(--01-bab-3, #01bab3);
+  font-family: sans-serif;
+  border: none;
+  padding: 12px 245px 12px 191px;
+  color: var(--ffffff, #fff);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.form_submit img {
+  position: absolute;
+  top: -30px;
+  right: 200px;
+}
+
+@media only screen and (max-width: 1300px) {
+  .item_nav {
+    display: flex;
+    gap: 450px;
+  }
+}
+
+@media only screen and (max-width: 1235px) {
+  .item_nav {
+    display: flex;
+    gap: 350px;
+  }
+
+  .form_fields {
+    display: flex;
+    justify-content: center;
+  }
+
+  #text {
+    padding: 8px 15px 10px 15px;
+  }
+
+  .form_date {
+    margin: auto;
+  }
+
+  .form_date img {
+    position: absolute;
+    top: -7px;
+    right: 30px;
+  }
+
+  .form_date label,
+  #date {
+    margin: auto;
+    padding: 10px 255px 14px 15px;
+  }
+
+  .gen h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .form_genders {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form_gender {
+    padding: 10px 130px 14px 14px;
+  }
+
+  .form_skype input {
+    padding: 15px 255px 14px 15px;
+  }
+
+  .form_promo input {
+    padding: 15px 255px 14px 15px;
+  }
+
+  .form_submit button {
+    padding: 12px 200px 12px 190px;
+  }
+
+  .form_submit img {
+    position: absolute;
+    top: -30px;
+    right: 165px;
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  .item_nav {
+    display: flex;
+    gap: 200px;
+  }
+
+  .form_fields {
+    display: flex;
+    justify-content: center;
+  }
+
+  #text {
+    padding: 8px 0 8px 10px;
+  }
+
+  .form_date {
+    margin: auto;
+  }
+
+  .form_date img {
+    position: absolute;
+    top: -7px;
+    right: 20px;
+  }
+
+  .form_date label,
+  #date {
+    margin: auto;
+    padding: 10px 205px 14px 15px;
+  }
+
+  .gen h2 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .form_genders {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form_gender {
+    padding: 10px 100px 14px 14px;
+  }
+
+  .form_skype input {
+    padding: 15px 205px 14px 15px;
+  }
+
+  .form_promo input {
+    padding: 15px 205px 14px 15px;
+  }
+
+  .form_submit button {
+    padding: 12px 180px 12px 160px;
+  }
+
+  .form_submit img {
+    position: absolute;
+    top: -30px;
+    right: 185px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .item_nav {
+    display: flex;
+    gap: 150px;
+  }
+
+  .form_fields {
+    display: flex;
+    gap: 8px;
+  }
+
+  #text {
+    padding: 8px 0 8px 5px;
+  }
+
+  .form_date {
+    margin: auto;
+  }
+
+  .form_date img {
+    position: absolute;
+    top: -7px;
+    right: 25px;
+  }
+
+  .form_date label,
+  #date {
+    margin: auto;
+    padding: 10px 170px 14px 15px;
+  }
+
+  .gen h2 {
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  .form_genders {
+    display: flex;
+    justify-content: center;
+  }
+
+  .form_gender {
+    padding: 10px 75px 14px 14px;
+  }
+
+  .form_skype label {
+    margin-left: 15px;
+  }
+
+  .form_skype input {
+    margin-left: 15px;
+    padding: 15px 165px 14px 15px;
+  }
+
+  .form_promo label {
+    margin-left: 15px;
+  }
+
+  .form_promo input {
+    margin-left: 15px;
+    padding: 15px 165px 14px 15px;
+  }
+
+  .form_submit button {
+    margin-left: 20px;
+    padding: 12px 170px 12px 120px;
+  }
+
+  .form_submit img {
+    position: absolute;
+    top: -30px;
+    right: 165px;
+  }
+}
